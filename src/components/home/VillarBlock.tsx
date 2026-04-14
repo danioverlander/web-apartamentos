@@ -29,7 +29,7 @@ export default function VillarBlock() {
               <p className="font-sans text-earth-600 leading-relaxed">
                 En el corazón del Parque Natural de Somiedo, Villar de Vildas
                 es uno de esos lugares que te hacen entender qué significa
-                la palabra "auténtico". Un pueblo pequeño donde la arquitectura
+                la palabra &ldquo;auténtico&rdquo;. Un pueblo pequeño donde la arquitectura
                 tradicional asturiana se conserva intacta.
               </p>
               <p className="font-sans text-earth-600 leading-relaxed">

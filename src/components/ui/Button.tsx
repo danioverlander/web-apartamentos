@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -8,7 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   variant?: "primary" | "secondary" | "ghost" | "outline";
   size?: "sm" | "md" | "lg";
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   external?: boolean;
 }

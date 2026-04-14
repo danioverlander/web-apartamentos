@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Users, BedDouble, Bath, Maximize } from "lucide-react";
@@ -76,7 +77,7 @@ export default function ApartamentoCard({ apartamento: apt, index = 0 }: Apartam
   );
 }
 
-function Spec({ icon, label }: { icon: React.ReactNode; label: string }) {
+function Spec({ icon, label }: { icon: ReactNode; label: string }) {
   return (
     <span className="flex items-center gap-1.5 font-sans text-[10px] text-earth-500 uppercase tracking-wide">
       {icon}

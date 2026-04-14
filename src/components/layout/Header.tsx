@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Navigation from "./Navigation";
@@ -107,7 +107,7 @@ function NavLink({
   scrolled,
 }: {
   href: string;
-  children: React.ReactNode;
+  children: ReactNode;
   scrolled: boolean;
 }) {
   return (

@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -212,7 +213,7 @@ export default function ApartamentoPage({ params }: PageProps) {
   );
 }
 
-function Spec({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) {
+function Spec({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
   return (
     <div className="flex flex-col gap-1">
       <div className="flex items-center gap-2 text-earth-500">{icon}</div>

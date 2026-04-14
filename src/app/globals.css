@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================================================
+   NORTH AUTHENTIC EXPERIENCE — Global Styles
+   Paleta: earth (tierra), cream, sage, charcoal
+   ===================================================== */
+
+@layer base {
+  :root {
+    --font-cormorant: "Cormorant Garamond", Georgia, serif;
+    --font-inter: "Inter", system-ui, sans-serif;
+    color-scheme: light;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-cream text-earth-800 font-sans;
+    font-feature-settings: "ss01", "ss02", "cv01";
+  }
+
+  /* Selección de texto */
+  ::selection {
+    @apply bg-earth-200 text-earth-900;
+  }
+
+  /* Scrollbar sutil */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-earth-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-earth-400;
+    border-radius: 0;
+  }
+
+  /* Focus visible global */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-earth-600;
+  }
+
+  /* Imágenes */
+  img {
+    @apply max-w-full;
+  }
+}
+
+@layer components {
+  /* Contenedor de sección con padding lateral responsivo */
+  .section-padding {
+    @apply py-section px-6 md:px-10;
+  }
+
+  /* Tipografía de cabecera de página */
+  .page-title {
+    @apply font-serif font-light text-earth-900 leading-tight;
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    letter-spacing: -0.02em;
+  }
+
+  /* Label de sección en mayúsculas */
+  .section-label {
+    @apply font-sans text-[10px] tracking-[0.25em] uppercase font-medium text-earth-500 mb-6;
+  }
+
+  /* Línea decorativa horizontal */
+  .rule {
+    @apply w-12 h-px bg-earth-400;
+  }
+
+  /* Botón primario */
+  .btn-primary {
+    @apply inline-flex items-center justify-center font-sans text-[10px] tracking-widest uppercase bg-earth-800 text-cream px-8 py-4 hover:bg-earth-900 transition-colors duration-500;
+  }
+
+  /* Botón outline */
+  .btn-outline {
+    @apply inline-flex items-center justify-center font-sans text-[10px] tracking-widest uppercase border border-earth-400 text-earth-700 px-8 py-4 hover:border-earth-700 hover:text-earth-900 transition-all duration-500;
+  }
+
+  /* Link con flecha animada */
+  .link-arrow {
+    @apply inline-flex items-center gap-3 font-sans text-[10px] tracking-widest uppercase text-earth-700 hover:text-earth-900 transition-colors duration-300 group;
+  }
+
+  .link-arrow-line {
+    @apply w-8 h-px bg-earth-400 group-hover:w-12 transition-all duration-500;
+  }
+}
+
+@layer utilities {
+  /* Animación de scroll down (Hero) */
+  @keyframes slideDown {
+    0%   { transform: translateY(-100%); opacity: 0; }
+    30%  { opacity: 1; }
+    100% { transform: translateY(200%); opacity: 0; }
+  }
+
+  .animate-slide-down {
+    animation: slideDown 1.8s ease-in-out infinite;
+  }
+
+  /* Ocultar scrollbar pero mantener funcionalidad */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Text balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Aspect ratio personalizado */
+  .aspect-portrait {
+    aspect-ratio: 3 / 4;
+  }
+  .aspect-landscape {
+    aspect-ratio: 4 / 3;
+  }
+  .aspect-wide {
+    aspect-ratio: 16 / 9;
+  }
+  .aspect-cinema {
+    aspect-ratio: 21 / 9;
+  }
+}

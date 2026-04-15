@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/65" />
 
       {/* Contenido */}
-      <div className="relative z-10 w-full max-w-content mx-auto px-6 md:px-12 pt-24">
+      <div className="relative z-10 w-full max-w-content mx-auto px-6 md:px-12 pt-28 md:pt-32">
 
         {/* Localización */}
         <p

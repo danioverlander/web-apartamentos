@@ -5,32 +5,64 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Navigation from "./Navigation";
 
-// ─── Icono teito (cabaña asturiana de cubierta vegetal) ───────────────────────
+// ─── Icono teito fiel al original ─────────────────────────────────────────────
+// Tejado redondeado y ancho (no triangular), franja de hierba oscura,
+// muro bajo de piedra circular, pequeña ventana central.
 function TeitoIcon({ className }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 52 52"
+      viewBox="0 0 100 72"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-hidden="true"
     >
-      {/* Tejado — forma característica del teito, muy inclinado */}
+      {/* Tejado — cúpula ancha y redondeada */}
       <path
-        d="M26 4 L3 28 H49 Z"
+        d="M6 44 C6 44 12 10 50 6 C88 10 94 44 94 44 C78 50 50 52 22 50 Z"
         fill="currentColor"
-        opacity="0.95"
+        opacity="0.92"
       />
-      {/* Cuerpo de piedra */}
-      <rect x="10" y="28" width="32" height="18" fill="currentColor" opacity="0.85" />
-      {/* Puerta */}
-      <rect x="21" y="34" width="10" height="12" fill="currentColor" opacity="0.35" />
-      {/* Línea de hierba en el tejado — detalle distintivo */}
+
+      {/* Franja oscura de hierba/musgo donde el tejado cuelga sobre el muro */}
       <path
-        d="M3 28 H49"
+        d="M6 44 C22 52 78 52 94 44"
         stroke="currentColor"
-        strokeWidth="1.2"
-        opacity="0.5"
+        strokeWidth="4"
+        strokeLinecap="round"
+        opacity="0.45"
+        fill="none"
+      />
+
+      {/* Muro de piedra — oval bajo */}
+      <path
+        d="M20 50 C20 50 18 62 50 64 C82 62 80 50 80 50 C64 56 36 56 20 50 Z"
+        fill="currentColor"
+        opacity="0.80"
+      />
+
+      {/* Líneas de piedra — detalle sutil */}
+      <path
+        d="M22 53 C38 58 62 58 78 53"
+        stroke="currentColor"
+        strokeWidth="0.8"
+        opacity="0.35"
+        fill="none"
+      />
+      <path
+        d="M24 57 C38 61 62 61 76 57"
+        stroke="currentColor"
+        strokeWidth="0.8"
+        opacity="0.30"
+        fill="none"
+      />
+
+      {/* Ventana/puerta — pequeña y oscura, centrada */}
+      <rect
+        x="43" y="48" width="14" height="9"
+        rx="1"
+        fill="currentColor"
+        opacity="0.20"
       />
     </svg>
   );

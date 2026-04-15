@@ -15,7 +15,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Bloquea scroll cuando el menú está abierto
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
@@ -25,35 +24,32 @@ export default function Header() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-700",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-cream/95 backdrop-blur-sm shadow-sm py-4"
-            : "bg-transparent py-6"
+            ? "bg-cream/96 backdrop-blur-sm shadow-sm py-4"
+            : "bg-black/30 backdrop-blur-md py-5"
         )}
       >
-        <div className="max-w-content mx-auto px-6 md:px-10 flex items-center justify-between">
-          {/* Logotipo */}
-          <Link href="/" className="flex flex-col leading-none group">
-            <span
-              className={cn(
-                "font-serif tracking-[0.12em] text-base transition-colors duration-500",
-                scrolled ? "text-earth-900" : "text-cream"
-              )}
-            >
+        <div className="max-w-content mx-auto px-6 md:px-12 flex items-center justify-between">
+
+          {/* Logo */}
+          <Link href="/" className="flex flex-col leading-none shrink-0">
+            <span className={cn(
+              "font-serif tracking-[0.15em] text-lg transition-colors duration-500",
+              scrolled ? "text-earth-900" : "text-white"
+            )}>
               NORTH
             </span>
-            <span
-              className={cn(
-                "font-sans font-light tracking-[0.25em] text-[9px] uppercase transition-colors duration-500",
-                scrolled ? "text-earth-500" : "text-earth-200/80"
-              )}
-            >
+            <span className={cn(
+              "font-sans font-light tracking-[0.22em] text-[9px] uppercase transition-colors duration-500",
+              scrolled ? "text-earth-500" : "text-white/70"
+            )}>
               Authentic Experience
             </span>
           </Link>
 
           {/* Nav escritorio */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-10">
             <NavLink href="/apartamentos" scrolled={scrolled}>
               Apartamentos
             </NavLink>
@@ -63,13 +59,15 @@ export default function Header() {
             <NavLink href="/nosotros" scrolled={scrolled}>
               Nosotros
             </NavLink>
+
+            {/* Botón Reservar — destacado */}
             <Link
               href="/contacto"
               className={cn(
-                "font-sans text-[10px] tracking-widest uppercase px-6 py-2.5 border transition-all duration-500",
+                "font-sans text-[10px] tracking-widest uppercase px-7 py-3 transition-all duration-500 font-medium",
                 scrolled
-                  ? "border-earth-800 text-earth-800 hover:bg-earth-800 hover:text-cream"
-                  : "border-cream/60 text-cream hover:border-cream hover:bg-cream/10"
+                  ? "bg-earth-800 text-cream hover:bg-earth-900"
+                  : "bg-white text-earth-900 hover:bg-white/90"
               )}
             >
               Reservar
@@ -78,7 +76,7 @@ export default function Header() {
 
           {/* Botón hamburguesa móvil */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer"
+            className="md:hidden flex flex-col gap-[5px] p-2 cursor-pointer"
             onClick={() => setMenuOpen(true)}
             aria-label="Abrir menú"
           >
@@ -86,8 +84,8 @@ export default function Header() {
               <span
                 key={i}
                 className={cn(
-                  "block h-px w-6 transition-colors duration-500",
-                  scrolled ? "bg-earth-800" : "bg-cream"
+                  "block h-[1.5px] w-6 transition-colors duration-500",
+                  scrolled ? "bg-earth-800" : "bg-white"
                 )}
               />
             ))}
@@ -95,7 +93,6 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Menú móvil */}
       <Navigation open={menuOpen} onClose={() => setMenuOpen(false)} />
     </>
   );
@@ -114,11 +111,20 @@ function NavLink({
     <Link
       href={href}
       className={cn(
-        "font-sans text-[10px] tracking-widest uppercase transition-colors duration-500 hover:opacity-60",
-        scrolled ? "text-earth-700" : "text-cream/80"
+        "relative font-sans text-[10px] tracking-widest uppercase transition-all duration-400 group",
+        scrolled
+          ? "text-earth-700 hover:text-earth-900"
+          : "text-white/85 hover:text-white"
       )}
     >
       {children}
+      {/* Underline animado en hover */}
+      <span
+        className={cn(
+          "absolute -bottom-1 left-0 h-px w-0 group-hover:w-full transition-all duration-300",
+          scrolled ? "bg-earth-700" : "bg-white/60"
+        )}
+      />
     </Link>
   );
 }

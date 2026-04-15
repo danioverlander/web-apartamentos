@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Hero              from "@/components/home/Hero";
-import EmotionalBlock    from "@/components/home/EmotionalBlock";
-import ElLugarBlock      from "@/components/home/ElLugarBlock";
+import Hero                from "@/components/home/Hero";
 import ApartamentosPreview from "@/components/home/ApartamentosPreview";
-import ExperienciaBlock  from "@/components/home/ExperienciaBlock";
-import VillarBlock       from "@/components/home/VillarBlock";
-import CTAFinal          from "@/components/home/CTAFinal";
+import EmotionalBlock      from "@/components/home/EmotionalBlock";
+import ElLugarBlock        from "@/components/home/ElLugarBlock";
+import ExperienciaBlock    from "@/components/home/ExperienciaBlock";
+import VillarBlock         from "@/components/home/VillarBlock";
+import CTAFinal            from "@/components/home/CTAFinal";
 
 export const metadata: Metadata = {
   title: "Apartamentos La Pornacal | North Authentic Experience — Somiedo, Asturias",
@@ -17,9 +17,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <ApartamentosPreview />
       <EmotionalBlock />
       <ElLugarBlock />
-      <ApartamentosPreview />
       <ExperienciaBlock />
       <VillarBlock />
       <CTAFinal />

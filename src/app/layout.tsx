@@ -4,6 +4,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -92,6 +93,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

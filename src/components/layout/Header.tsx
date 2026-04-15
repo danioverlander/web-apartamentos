@@ -31,11 +31,11 @@ export default function Header() {
             /> */}
 
             {/* Texto de marca */}
-            <div className="flex flex-col leading-none">
-              <span className="font-serif text-2xl tracking-[0.10em] text-neutral-900 font-semibold">
+            <div className="flex flex-col leading-none gap-1">
+              <span className="font-serif text-3xl tracking-[0.12em] text-neutral-900 font-bold">
                 NORTH
               </span>
-              <span className="font-sans text-[10px] tracking-[0.30em] uppercase text-neutral-600 font-light mt-1">
+              <span className="font-sans text-[11px] tracking-[0.28em] uppercase text-neutral-800 font-medium">
                 Authentic Experience
               </span>
             </div>

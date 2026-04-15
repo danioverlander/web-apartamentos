@@ -30,7 +30,7 @@ export default function ApartamentosPage() {
             Villar de Vildas · Somiedo · Asturias
           </p>
           <h1
-            className="font-serif font-light text-cream leading-tight"
+            className="font-serif text-cream leading-tight"
             style={{ fontSize: "clamp(2.5rem, 6vw, 6rem)" }}
           >
             Apartamentos<br />La Pornacal.
@@ -45,7 +45,7 @@ export default function ApartamentosPage() {
             <FadeIn>
               <SectionLabel>Siete refugios en la naturaleza</SectionLabel>
               <h2
-                className="font-serif font-light text-earth-900 leading-tight"
+                className="font-serif text-earth-900 leading-tight"
                 style={{ fontSize: "clamp(1.8rem, 3.5vw, 3rem)" }}
               >
                 Cada uno, un espacio<br />

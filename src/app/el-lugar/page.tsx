@@ -39,7 +39,7 @@ export default function ElLugarPage() {
             Parque Natural de Somiedo · Asturias
           </p>
           <h1
-            className="font-serif font-light text-cream leading-tight"
+            className="font-serif text-cream leading-tight"
             style={{ fontSize: "clamp(2.5rem, 6vw, 6.5rem)" }}
           >
             El lugar.
@@ -54,7 +54,7 @@ export default function ElLugarPage() {
             <FadeIn>
               <SectionLabel>Villar de Vildas</SectionLabel>
               <h2
-                className="font-serif font-light text-earth-900 leading-tight mb-6"
+                className="font-serif text-earth-900 leading-tight mb-6"
                 style={{ fontSize: "clamp(2rem, 4vw, 4rem)" }}
               >
                 Un pueblo que<br />
@@ -110,7 +110,7 @@ export default function ElLugarPage() {
           <FadeIn className="mb-16">
             <SectionLabel light>La Braña de La Pornacal</SectionLabel>
             <h2
-              className="font-serif font-light text-cream leading-tight max-w-3xl"
+              className="font-serif text-cream leading-tight max-w-3xl"
               style={{ fontSize: "clamp(2rem, 4.5vw, 5rem)" }}
             >
               Uno de los conjuntos de teitos<br />
@@ -171,7 +171,7 @@ export default function ElLugarPage() {
           <FadeIn className="mb-12">
             <SectionLabel>Qué hacer en Somiedo</SectionLabel>
             <h2
-              className="font-serif font-light text-earth-900 leading-tight"
+              className="font-serif text-earth-900 leading-tight"
               style={{ fontSize: "clamp(1.8rem, 3.5vw, 3.5rem)" }}
             >
               El entorno, a tu ritmo.
@@ -203,7 +203,7 @@ export default function ElLugarPage() {
           <FadeIn>
             <SectionLabel className="block mx-auto">El siguiente paso</SectionLabel>
             <h2
-              className="font-serif font-light text-earth-900 mb-4"
+              className="font-serif text-earth-900 mb-4"
               style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}
             >
               Reserva tu refugio.

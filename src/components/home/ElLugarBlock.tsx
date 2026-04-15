@@ -12,7 +12,7 @@ export default function ElLugarBlock() {
         <FadeIn className="mb-16 md:mb-20">
           <SectionLabel>El lugar</SectionLabel>
           <h2
-            className="font-serif font-light text-earth-900 leading-tight"
+            className="font-serif text-earth-900 leading-tight"
             style={{ fontSize: "clamp(2.5rem, 5vw, 5rem)" }}
           >
             Villar de Vildas.<br />

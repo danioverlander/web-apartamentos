@@ -13,7 +13,7 @@ export default function LegalPage() {
       <div className="max-w-narrow mx-auto px-6 md:px-10">
         <FadeIn className="mb-12">
           <h1
-            className="font-serif font-light text-earth-900 leading-tight"
+            className="font-serif text-earth-900 leading-tight"
             style={{ fontSize: "clamp(2rem, 4vw, 4rem)" }}
           >
             Legal.

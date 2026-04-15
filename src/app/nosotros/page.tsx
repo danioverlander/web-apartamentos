@@ -34,7 +34,7 @@ export default function NosotrosPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-earth-950/80 via-earth-900/20 to-transparent" />
         <div className="relative z-10 max-w-content mx-auto px-6 md:px-10 pb-14 w-full">
           <h1
-            className="font-serif font-light text-cream leading-tight"
+            className="font-serif text-cream leading-tight"
             style={{ fontSize: "clamp(2.5rem, 6vw, 6rem)" }}
           >
             Nosotros.
@@ -49,7 +49,7 @@ export default function NosotrosPage() {
             <FadeIn>
               <SectionLabel>North Authentic Experience</SectionLabel>
               <h2
-                className="font-serif font-light text-earth-900 leading-tight mb-6"
+                className="font-serif text-earth-900 leading-tight mb-6"
                 style={{ fontSize: "clamp(1.8rem, 3.5vw, 3.5rem)" }}
               >
                 Una forma diferente<br />
@@ -99,7 +99,7 @@ export default function NosotrosPage() {
           <FadeIn className="mb-14">
             <SectionLabel light>Lo que nos guía</SectionLabel>
             <h2
-              className="font-serif font-light text-cream leading-tight"
+              className="font-serif text-cream leading-tight"
               style={{ fontSize: "clamp(2rem, 4vw, 4rem)" }}
             >
               Nuestros valores.
@@ -130,7 +130,7 @@ export default function NosotrosPage() {
           <FadeIn>
             <blockquote className="mb-10">
               <p
-                className="font-serif font-light text-earth-800 leading-tight"
+                className="font-serif text-earth-800 leading-tight"
                 style={{ fontSize: "clamp(1.6rem, 3.5vw, 3rem)" }}
               >
                 &ldquo;Creemos que los mejores momentos<br />

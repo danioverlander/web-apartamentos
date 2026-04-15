@@ -29,6 +29,8 @@
 
   body {
     @apply bg-cream text-earth-800 font-sans;
+    font-size: 16px;
+    line-height: 1.65;
     font-feature-settings: "ss01", "ss02", "cv01";
   }
 

@@ -27,7 +27,7 @@ export default function ContactoPage() {
           <FadeIn className="mb-14">
             <SectionLabel>Habla con nosotros</SectionLabel>
             <h1
-              className="font-serif font-light text-earth-900 leading-tight"
+              className="font-serif text-earth-900 leading-tight"
               style={{ fontSize: "clamp(2.5rem, 5vw, 5.5rem)" }}
             >
               Contacto.

@@ -14,7 +14,7 @@ export default function ApartamentosPreview() {
           <FadeIn>
             <SectionLabel>Apartamentos La Pornacal</SectionLabel>
             <h2
-              className="font-serif font-light text-earth-900 leading-tight"
+              className="font-serif text-earth-900 leading-tight"
               style={{ fontSize: "clamp(2rem, 4.5vw, 4rem)" }}
             >
               Siete refugios<br />

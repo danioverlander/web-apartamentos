@@ -36,7 +36,7 @@ export default function Header() {
           <Link href="/" className="flex flex-col leading-none group">
             <span
               className={cn(
-                "font-serif font-light tracking-[0.12em] text-base transition-colors duration-500",
+                "font-serif tracking-[0.12em] text-base transition-colors duration-500",
                 scrolled ? "text-earth-900" : "text-cream"
               )}
             >

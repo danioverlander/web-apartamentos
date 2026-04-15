@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Marca */}
           <div>
             <Link href="/" className="flex flex-col leading-none mb-6">
-              <span className="font-serif font-light tracking-[0.12em] text-base text-cream">
+              <span className="font-serif tracking-[0.12em] text-base text-cream">
                 NORTH
               </span>
               <span className="font-sans font-light tracking-[0.25em] text-[9px] uppercase text-earth-400">

@@ -4,59 +4,69 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] max-h-[1000px] flex items-end overflow-hidden">
-      {/* Imagen de fondo — reemplaza src por tu foto real */}
       <Image
-        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=85"
-        alt="Parque Natural de Somiedo, Asturias"
+        src="/images/hero.jpg"
+        alt="Terraza con vistas al valle — Apartamentos La Pornacal, Villar de Vildas, Somiedo"
         fill
         priority
         className="object-cover object-center"
         sizes="100vw"
       />
 
-      {/* Gradiente oscuro desde abajo */}
-      <div className="absolute inset-0 bg-gradient-to-t from-earth-950/90 via-earth-900/40 to-transparent" />
+      {/* Gradiente oscuro desde abajo, más pronunciado para legibilidad */}
+      <div className="absolute inset-0 bg-gradient-to-t from-earth-950/95 via-earth-900/55 to-transparent" />
 
       {/* Contenido */}
       <div className="relative z-10 w-full max-w-content mx-auto px-6 md:px-10 pb-16 md:pb-24">
-        {/* Microcopy */}
-        <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-earth-200/70 mb-6 animate-fade-in"
-           style={{ animationDelay: "200ms" }}>
-          Somiedo · Asturias · Pueblo Ejemplar
-        </p>
 
-        {/* Titular */}
+        {/* Localización — más grande y visible */}
+        <div className="flex flex-wrap items-center gap-2 mb-5 animate-fade-in" style={{ animationDelay: "200ms" }}>
+          <span className="font-sans text-[11px] md:text-[13px] tracking-[0.3em] uppercase text-cream font-medium">
+            Villar de Vildas
+          </span>
+          <span className="text-cream/40 text-xs">·</span>
+          <span className="font-sans text-[11px] md:text-[13px] tracking-[0.3em] uppercase text-cream/70">
+            Pueblo Ejemplar de Asturias
+          </span>
+          <span className="text-cream/40 text-xs">·</span>
+          <span className="font-sans text-[11px] md:text-[13px] tracking-[0.3em] uppercase text-cream/70">
+            Somiedo
+          </span>
+        </div>
+
+        {/* Titular — más grande */}
         <h1
-          className="font-serif font-light text-cream leading-[1.05] tracking-tight mb-6 animate-fade-up"
+          className="font-serif text-cream leading-[1.05] tracking-tight mb-7 animate-fade-up"
           style={{
-            fontSize: "clamp(3.5rem, 8vw, 8rem)",
-            animationDelay: "400ms",
+            fontSize: "clamp(4rem, 9vw, 9.5rem)",
+            animationDelay: "350ms",
+            textShadow: "0 2px 24px rgba(0,0,0,0.45)",
           }}
         >
           Desconecta.<br />
           <em className="not-italic">Vuelve a lo esencial.</em>
         </h1>
 
-        {/* Subtítulo */}
+        {/* Subtítulo — más grande y legible */}
         <p
-          className="font-sans font-light text-earth-200/80 max-w-md mb-10 leading-relaxed animate-fade-up"
-          style={{ fontSize: "clamp(0.9rem, 1.5vw, 1.1rem)", animationDelay: "600ms" }}
+          className="font-sans font-light text-cream/85 max-w-lg mb-10 leading-relaxed animate-fade-up"
+          style={{ fontSize: "clamp(1rem, 1.8vw, 1.2rem)", animationDelay: "550ms" }}
         >
           Siete apartamentos rurales en el corazón del Parque Natural de Somiedo.
           Un lugar para bajar el ritmo, respirar profundo y recordar lo que importa.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: "800ms" }}>
+        <div className="flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: "750ms" }}>
           <Link
             href="/apartamentos"
-            className="inline-flex items-center font-sans text-[10px] tracking-widest uppercase bg-cream text-earth-800 px-8 py-4 hover:bg-earth-100 transition-colors duration-500"
+            className="inline-flex items-center font-sans text-[11px] tracking-widest uppercase bg-cream text-earth-800 px-9 py-4 hover:bg-earth-100 transition-colors duration-500"
           >
             Ver apartamentos
           </Link>
           <Link
             href="/el-lugar"
-            className="inline-flex items-center font-sans text-[10px] tracking-widest uppercase border border-cream/50 text-cream px-8 py-4 hover:border-cream hover:bg-cream/10 transition-colors duration-500"
+            className="inline-flex items-center font-sans text-[11px] tracking-widest uppercase border border-cream/60 text-cream px-9 py-4 hover:border-cream hover:bg-cream/10 transition-colors duration-500"
           >
             El lugar
           </Link>

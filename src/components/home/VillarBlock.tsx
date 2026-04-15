@@ -19,7 +19,7 @@ export default function VillarBlock() {
           <FadeIn direction="right">
             <SectionLabel>Villar de Vildas</SectionLabel>
             <h2
-              className="font-serif font-light text-earth-900 leading-tight mb-6"
+              className="font-serif text-earth-900 leading-tight mb-6"
               style={{ fontSize: "clamp(2rem, 4vw, 4rem)" }}
             >
               Un pueblo con<br />

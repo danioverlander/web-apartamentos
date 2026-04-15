@@ -22,7 +22,7 @@ export default function CTAFinal() {
             North Authentic Experience
           </p>
           <h2
-            className="font-serif font-light text-cream leading-tight mb-6"
+            className="font-serif text-cream leading-tight mb-6"
             style={{ fontSize: "clamp(2.5rem, 6vw, 6rem)" }}
           >
             Tu refugio te espera.

@@ -8,7 +8,7 @@ export default function NotFound() {
           Error 404
         </p>
         <h1
-          className="font-serif font-light text-earth-800 leading-tight mb-5"
+          className="font-serif text-earth-800 leading-tight mb-5"
           style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}
         >
           Esta página<br />no existe.

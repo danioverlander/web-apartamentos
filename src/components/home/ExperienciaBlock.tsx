@@ -37,7 +37,7 @@ export default function ExperienciaBlock() {
         <FadeIn className="mb-16 md:mb-20">
           <SectionLabel light>La experiencia</SectionLabel>
           <h2
-            className="font-serif font-light text-cream leading-tight max-w-2xl"
+            className="font-serif text-cream leading-tight max-w-2xl"
             style={{ fontSize: "clamp(2rem, 4.5vw, 4.5rem)" }}
           >
             Despertarás diferente.

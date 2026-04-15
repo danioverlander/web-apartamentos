@@ -10,7 +10,7 @@ export default function EmotionalBlock() {
           <FadeIn direction="right">
             <blockquote>
               <p
-                className="font-serif font-light text-earth-800 leading-[1.2]"
+                className="font-serif text-earth-800 leading-[1.2]"
                 style={{ fontSize: "clamp(1.8rem, 4vw, 3.5rem)" }}
               >
                 &ldquo;Vivimos demasiado rápido.<br />

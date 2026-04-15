@@ -73,13 +73,13 @@ export default function ContactoPage() {
                       className="bg-earth-50 border border-earth-200 text-earth-700 font-sans text-sm px-4 py-3 focus:outline-none focus:border-earth-600 transition-colors"
                     >
                       <option value="">— Cualquiera / Sin preferencia —</option>
-                      <option value="la-brana">La Braña (2 personas)</option>
-                      <option value="el-teito">El Teito (2 personas)</option>
-                      <option value="el-valle">El Valle (4 personas)</option>
-                      <option value="la-majada">La Majada (4 personas)</option>
-                      <option value="el-roble">El Roble (2 personas)</option>
-                      <option value="el-hayedo">El Hayedo (6 personas)</option>
-                      <option value="la-pornacal">La Pornacal (4 personas)</option>
+                      <option value="la-pornacal-i">La Pornacal I (2 personas)</option>
+                      <option value="la-pornacal-ii">La Pornacal II (2 personas)</option>
+                      <option value="la-pornacal-iii">La Pornacal III (2 personas)</option>
+                      <option value="el-correralin">El Corralín (2 personas)</option>
+                      <option value="el-cogollo">El Cogollo (2 personas)</option>
+                      <option value="el-cornon">El Cornón (4 personas)</option>
+                      <option value="el-cornin">El Cornín (2 personas)</option>
                     </select>
                   </div>
 
